@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">mi消息接收</string>
+    <string name="ok">确认</string>
+    <string name="cancel">取消</string>
+    <string name="set_alias">设置别名</string>
+    <string name="unset_alias">撤销别名</string>
+    <string name="set_account">设置帐号</string>
+    <string name="unset_account">撤销帐号</string>
+    <string name="subscribe_topic">订阅标签</string>
+    <string name="unsubscribe_topic">撤销标签</string>
+    <string name="set_accept_time">设置时间</string>
+    <string name="pause_push">暂停推送</string>
+    <string name="resume_push">恢复推送</string>
+    <string name="start_time">开始时间</string>
+    <string name="end_time">结束时间</string>
+    <string name="login_wifi">登录网络</string>
+    <string name="set_self_start">设置自启动</string>
+    <string name="char_record">聊天栏</string>
+    <string name="action_qq_contacts">QQ联系人</string>
+    <string name="action_wechat_contacts">微信联系人</string>
+    <string name="action_help">帮助</string>
+    <string name="action_settings">设置</string>
+    <string name="register_success">Register push success.</string>
+    <string name="register_fail">Register push fail.</string>
+    <string name="recv_passthrough_message"> Receive a passthrough message \"%1$s\"</string>
+    <string name="click_notification_message"> Clicked a notification message \"%1$s\"</string>
+    <string name="arrive_notification_message"> Arrived a notification message \"%1$s\"</string>
+    <string name="set_alias_success"> Set alias \"%1$s\" success.</string>
+    <string name="set_alias_fail"> Set alias fail for %1$s.</string>
+    <string name="unset_alias_success"> Unset alias \"%1$s\" success.</string>
+    <string name="unset_alias_fail"> Unset alias fail for %1$s.</string>
+    <string name="set_account_success"> Set account \"%1$s\" success.</string>
+    <string name="set_account_fail"> Set account fail for %1$s.</string>
+    <string name="unset_account_success"> Unset account \"%1$s\" success.</string>
+    <string name="unset_account_fail"> Unset account fail for %1$s.</string>
+    <string name="subscribe_topic_success"> Subscribe topic \"%1$s\" success.</string>
+    <string name="subscribe_topic_fail"> Subscribe topic fail for %1$s.</string>
+    <string name="unsubscribe_topic_success"> Unsubscribe topic \"%1$s\" success.</string>
+    <string name="unsubscribe_topic_fail"> Unsubscribe topic fail for %1$s.</string>
+    <string name="set_accept_time_success"> Set accept time %1$s - %2$s success.</string>
+    <string name="set_accept_time_fail"> Set accept time fail for %1$s.</string>
+
+    <string name="notification_channel_sys_description">用于推送系统消息，例如扫描二维码通知</string>
+    <string name="notification_channel_sys_id">channel_system</string>
+    <string name="notification_channel_sys_name">系统通知</string>
+
+    <string name="notification_channel_qq_contact_descrption">用于QQ联系人消息推送</string>
+    <string name="notification_channel_qq_contact_id">channel_qq_contact</string>
+    <string name="notification_channel_qq_contact_name">QQ-联系人消息</string>
+    <string name="notification_channel_qq_discuss_descrption">用于QQ讨论组消息推送</string>
+    <string name="notification_channel_qq_discuss_id">channel_qq_discuss</string>
+    <string name="notification_channel_qq_discuss_name">QQ-讨论组消息</string>
+    <string name="notification_channel_qq_group_descrption">用于QQ群消息推送</string>
+    <string name="notification_channel_qq_group_id">channel_qq_group</string>
+    <string name="notification_channel_qq_group_name">QQ-群消息</string>
+    <string name="notification_channel_qq_at_description">用于QQ带@信息推送</string>
+    <string name="notification_channel_qq_at_id">channel_qq_at</string>
+    <string name="notification_channel_qq_at_name">QQ-有人@我消息</string>
+
+    <string name="notification_channel_wechat_contact_descrption">用于微信联系人消息推送</string>
+    <string name="notification_channel_wechat_contact_id">channel_wechat_contact</string>
+    <string name="notification_channel_wechat_contact_name">微信-联系人消息</string>
+    <string name="notification_channel_wechat_discuss_descrption">用于微信讨论组消息推送</string>
+    <string name="notification_channel_wechat_discuss_id">channel_wechat_discuss</string>
+    <string name="notification_channel_wechat_discuss_name">微信-讨论组消息</string>
+    <string name="notification_channel_wechat_group_descrption">用于微信群消息推送</string>
+    <string name="notification_channel_wechat_group_id">channel_wechat_group</string>
+    <string name="notification_channel_wechat_group_name">微信-群消息</string>
+    <string name="notification_channel_wechat_at_description">用于微信带@信息推送</string>
+    <string name="notification_channel_wechat_at_id">channel_wechat_at</string>
+    <string name="notification_channel_wechat_at_name">微信-有人@我消息</string>
+
+    <string name="notification_group_qq_name">QQ</string>
+    <string name="notification_group_wechat_name">微信</string>
+    <string name="notification_group_sys_name">系统通知</string>
+
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="text_user_welcome_msg">\t\t首次使用,请点击右上角设置按照教程设置alias进行使用(卸载重装以及清除数据可能需要重新设置)，本软件可以采用配合备用机使用小转发进行使用（此方案与消息接收app的教程大致相同，但是暂时只能通过设置alias使用）或者配合在服务器上登录的微信和QQ机器人使用（微信的脚本为Python实现比较简单且可以直接运行在PC上可以联系我提供，但需要确保了解过Python环境的相关配置，由于本人目前正在准备考研，没有太多的时间教学），但是需要用户，更多请阅读使用帮助并参考酷安发布的教程！</string>
+    <string name="text_reply_disabled">未开启回复功能</string>
+    <string name="text_check_login_failed">[注意]未检测到登录成功事件</string>
+    <string name="text_system_control">系统控制</string>
+    <string name="text_chat_initiative">主动聊天</string>
+    <string name="text_control_unsupported_short">不支持的命令</string>
+    <string name="text_send_success">发送成功</string>
+    <string name="text_send_failed">发送失败</string>
+    <string name="user_bot_qq_name">QQ机器人</string>
+    <string name="user_bot_wechat_name">微信机器人</string>
+    <string name="notification_action_list">列表</string>
+    <string name="notification_action_clear">清除</string>
+    <string name="notification_title_default">联系人</string>
+    <string name="notification_detail_default">你收到了新消息</string>
+    <string name="paused_one_hour">1小时</string>
+    <string name="paused_two_hour">2小时</string>
+    <string name="paused_six_hour">6小时</string>
+    <string name="paused_one_day">1天</string>
+    <string name="paused_oneself">自定义</string>
+    <string name="paused_oneself_hint">请输入自定义时长（分）：</string>
+    <string name="paused_oneself_error">时间太长了！</string>
+    <string name="paused_oneself_null">时间不能为空！</string>
+    <string name="text_empty">空</string>
+    <string name="text_login_qrcode">二维码事件</string>
+    <string name="text_login_qrcode_scan">扫描二维码事件</string>
+    <string name="text_login_success">登录成功</string>
+    <string name="toast_check_package_fail">未检测到</string>
+    <string name="toast_check_doze_fail">您的系统不支持浅睡模式</string>
+    <string name="user_bot_msg">用于控制服务器端</string>
+    <string name="user_welcome_name">欢迎使用</string>
+    <string name="user_welcome_msg">请点击右上角设置按照教程设置alias以进行使用</string>
+    <string name="text_control_relogin_in_progress">正在重新登录</string>
+    <string name="text_control_stop_in_progress">正在注销</string>
+    <string name="text_control_help">目前支持命令：\n\t(1)relogin - 重新登录\n\t（2）stop - 停止服务端</string>
+    <string name="text_control_unsupported">不支持的命令，如需查看命令列表，请输入help。</string>
+    <string name="notify_title_msgcount_new">条新消息</string>
+    <string name="notification_action_reply">回复</string>
+    <string name="action_done">确定</string>
+    <string name="action_cancel">取消</string>
+</resources>

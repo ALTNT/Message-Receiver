@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical"
+    android:id="@+id/ReplyLinearLayout">
+    <!-- Title start -->
+    <RelativeLayout
+        android:id="@+id/title_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:onClick="onTitleClick">
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/qq"
+            android:id="@+id/msgType_imageView" />
+        <TextView
+            android:id="@+id/textView_sender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:layout_alignBottom="@id/msgType_imageView"
+            android:text="测试内容"
+            android:textColor="#757575"
+            android:layout_toRightOf="@+id/msgType_imageView"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center_vertical" />
+    </RelativeLayout>
+    <!-- Title end -->
+    <!-- Message content start -->
+    <LinearLayout
+        android:id="@+id/msg_list_ll"
+        android:layout_width="match_parent"
+        android:layout_height="410dip"
+        android:layout_marginTop="3.0dip"
+        android:layout_marginBottom="3.0dip"
+        android:background="#ffffffff"
+        android:orientation="vertical"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400.0dip"
+            android:background="#ffffffff"
+            android:orientation="vertical"
+            android:scrollbars="vertical">
+
+            <ListView
+                android:id="@+id/msg_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:cacheColorHint="#00000000"
+                android:divider="@null"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:listSelector="#00000000"
+                android:stackFromBottom="true"></ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:text="TextView"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/msgType_text" />
+    <View
+        android:id="@+id/msgType_line_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#d8d8d8" />
+    <!-- Reply start -->
+    <LinearLayout
+        android:id="@+id/bottom_panel"
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+        <EditText
+            android:id="@+id/edittext_content"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="start|top"
+            android:hint="输入信息"
+            android:imeOptions="actionSend"
+            android:inputType="textMultiLine"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/black"
+            android:textSize="20sp">
+
+            <requestFocus />
+        </EditText>
+
+        <LinearLayout
+            android:id="@+id/button_with_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/imagebutton_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@android:drawable/ic_menu_send" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

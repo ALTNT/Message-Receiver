@@ -1,0 +1,207 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/main_activity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.message_receiverAL.mm.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.TestApplication.AppBarOverlay">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.TestApplication.PopupOverlay" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <Button-->
+<!--            android:id="@+id/set_alias"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="@dimen/margin_button"-->
+<!--            android:background="@drawable/all_btn"-->
+<!--            android:paddingLeft="@dimen/set_padding"-->
+<!--            android:paddingRight="@dimen/set_padding"-->
+<!--            android:text="@string/set_alias"-->
+<!--            android:textSize="@dimen/text_btn_size" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/set_account"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginLeft="@dimen/margin_button"-->
+<!--            android:background="@drawable/all_btn"-->
+<!--            android:paddingLeft="@dimen/set_padding"-->
+<!--            android:paddingRight="@dimen/set_padding"-->
+<!--            android:text="@string/set_account"-->
+<!--            android:textSize="@dimen/text_btn_size" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/subscribe_topic"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="@dimen/margin_button"-->
+<!--            android:background="@drawable/all_btn"-->
+<!--            android:paddingLeft="@dimen/set_padding"-->
+<!--            android:paddingRight="@dimen/set_padding"-->
+<!--            android:text="@string/subscribe_topic"-->
+<!--            android:textSize="@dimen/text_btn_size" />-->
+<!--    </LinearLayout>-->
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <Button-->
+<!--            android:id="@+id/unset_alias"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="@dimen/margin_button"-->
+<!--            android:background="@drawable/all_btn"-->
+<!--            android:paddingLeft="@dimen/set_padding"-->
+<!--            android:paddingRight="@dimen/set_padding"-->
+<!--            android:text="@string/unset_alias"-->
+<!--            android:textSize="@dimen/text_btn_size" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/unset_account"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="@dimen/margin_button"-->
+<!--            android:background="@drawable/all_btn"-->
+<!--            android:paddingLeft="@dimen/set_padding"-->
+<!--            android:paddingRight="@dimen/set_padding"-->
+<!--            android:text="@string/unset_account"-->
+<!--            android:textSize="@dimen/text_btn_size" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/unsubscribe_topic"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="@dimen/margin_button"-->
+<!--            android:background="@drawable/all_btn"-->
+<!--            android:paddingLeft="@dimen/set_padding"-->
+<!--            android:paddingRight="@dimen/set_padding"-->
+<!--            android:text="@string/unsubscribe_topic"-->
+<!--            android:textSize="@dimen/text_btn_size" />-->
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <Button-->
+<!--            android:id="@+id/pause_push"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="@dimen/margin_button"-->
+<!--            android:background="@drawable/all_btn"-->
+<!--            android:paddingLeft="@dimen/set_padding"-->
+<!--            android:paddingRight="@dimen/set_padding"-->
+<!--            android:text="@string/pause_push"-->
+<!--            android:textSize="@dimen/text_btn_size" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/resume_push"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="@dimen/margin_button"-->
+<!--            android:background="@drawable/all_btn"-->
+<!--            android:paddingLeft="@dimen/set_padding"-->
+<!--            android:paddingRight="@dimen/set_padding"-->
+<!--            android:text="@string/resume_push"-->
+<!--            android:textSize="@dimen/text_btn_size" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/set_accept_time"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="@dimen/margin_button"-->
+<!--            android:background="@drawable/all_btn"-->
+<!--            android:paddingLeft="@dimen/set_padding"-->
+<!--            android:paddingRight="@dimen/set_padding"-->
+<!--            android:text="@string/set_accept_time"-->
+<!--            android:textSize="@dimen/text_btn_size" />-->
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <Button-->
+<!--            android:id="@+id/login_wifi"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="@dimen/margin_button"-->
+<!--            android:background="@drawable/all_btn"-->
+<!--            android:paddingLeft="@dimen/set_padding"-->
+<!--            android:paddingRight="@dimen/set_padding"-->
+<!--            android:text="@string/login_wifi"-->
+<!--            android:textSize="@dimen/text_btn_size" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/set_self_start"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginLeft="@dimen/margin_button"-->
+<!--            android:background="@drawable/all_btn"-->
+<!--            android:paddingLeft="@dimen/set_padding"-->
+<!--            android:paddingRight="@dimen/set_padding"-->
+<!--            android:text="@string/set_self_start"-->
+<!--            android:textSize="@dimen/text_btn_size" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/chat_record"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="@dimen/margin_button"-->
+<!--            android:background="@drawable/all_btn"-->
+<!--            android:paddingLeft="@dimen/set_padding"-->
+<!--            android:paddingRight="@dimen/set_padding"-->
+<!--            android:text="@string/char_record"-->
+<!--            android:textSize="@dimen/text_btn_size" />-->
+<!--    </LinearLayout>-->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/log"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:singleLine="false"
+            android:textSize="@dimen/text_size" />
+    </ScrollView>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/current_user_list_view"/>
+
+</LinearLayout>

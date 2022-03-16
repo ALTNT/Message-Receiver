@@ -1,0 +1,193 @@
+<?xml version="1" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="#F9F9F9"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/set_alias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_button"
+            android:background="@drawable/all_btn"
+            android:paddingLeft="@dimen/set_padding"
+            android:paddingRight="@dimen/set_padding"
+            android:text="@string/set_alias"
+            android:textSize="@dimen/text_btn_size" />
+
+        <Button
+            android:id="@+id/set_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_button"
+            android:background="@drawable/all_btn"
+            android:paddingLeft="@dimen/set_padding"
+            android:paddingRight="@dimen/set_padding"
+            android:text="@string/set_account"
+            android:textSize="@dimen/text_btn_size" />
+
+        <Button
+            android:id="@+id/subscribe_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_button"
+            android:background="@drawable/all_btn"
+            android:paddingLeft="@dimen/set_padding"
+            android:paddingRight="@dimen/set_padding"
+            android:text="@string/subscribe_topic"
+            android:textSize="@dimen/text_btn_size" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/unset_alias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_button"
+            android:background="@drawable/all_btn"
+            android:paddingLeft="@dimen/set_padding"
+            android:paddingRight="@dimen/set_padding"
+            android:text="@string/unset_alias"
+            android:textSize="@dimen/text_btn_size" />
+
+        <Button
+            android:id="@+id/unset_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_button"
+            android:background="@drawable/all_btn"
+            android:paddingLeft="@dimen/set_padding"
+            android:paddingRight="@dimen/set_padding"
+            android:text="@string/unset_account"
+            android:textSize="@dimen/text_btn_size" />
+
+        <Button
+            android:id="@+id/unsubscribe_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_button"
+            android:background="@drawable/all_btn"
+            android:paddingLeft="@dimen/set_padding"
+            android:paddingRight="@dimen/set_padding"
+            android:text="@string/unsubscribe_topic"
+            android:textSize="@dimen/text_btn_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/pause_push"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_button"
+            android:background="@drawable/all_btn"
+            android:paddingLeft="@dimen/set_padding"
+            android:paddingRight="@dimen/set_padding"
+            android:text="@string/pause_push"
+            android:textSize="@dimen/text_btn_size" />
+
+        <Button
+            android:id="@+id/resume_push"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_button"
+            android:background="@drawable/all_btn"
+            android:paddingLeft="@dimen/set_padding"
+            android:paddingRight="@dimen/set_padding"
+            android:text="@string/resume_push"
+            android:textSize="@dimen/text_btn_size" />
+
+        <Button
+            android:id="@+id/set_accept_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_button"
+            android:background="@drawable/all_btn"
+            android:paddingLeft="@dimen/set_padding"
+            android:paddingRight="@dimen/set_padding"
+            android:text="@string/set_accept_time"
+            android:textSize="@dimen/text_btn_size" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/login_wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_button"
+            android:background="@drawable/all_btn"
+            android:paddingLeft="@dimen/set_padding"
+            android:paddingRight="@dimen/set_padding"
+            android:text="@string/login_wifi"
+            android:textSize="@dimen/text_btn_size" />
+
+        <Button
+            android:id="@+id/set_self_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_button"
+            android:background="@drawable/all_btn"
+            android:paddingLeft="@dimen/set_padding"
+            android:paddingRight="@dimen/set_padding"
+            android:text="@string/set_self_start"
+            android:textSize="@dimen/text_btn_size" />
+
+        <Button
+            android:id="@+id/chat_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_button"
+            android:background="@drawable/all_btn"
+            android:paddingLeft="@dimen/set_padding"
+            android:paddingRight="@dimen/set_padding"
+            android:text="@string/char_record"
+            android:textSize="@dimen/text_btn_size" />
+    </LinearLayout>
+
+</LinearLayout>
