@@ -71,3 +71,10 @@ alias=你设置的alias，
 
 
 QQ机器人配置比较复杂（我当初配置了大半天），可以在github上自行学习如何配置nonebot+go-cqhttp，之后只需修改几行代码即可，到时可以联系我获取要替换的文件。代码以及许多本人自己使用的小功能，因此很多功能尚未实现或无法满足使用条件，请忽略无用功能。
+
+
+效果展示：
+![image](img_readme/1.jpg)
+![image](img_readme/2.jpg)
+![image](img_readme/3.jpg)
+![image](img_readme/4.jpg)
